@@ -1,0 +1,7 @@
+.grid{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 70px 60px repeat(8, 500px);
+  }
+ 

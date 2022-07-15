@@ -1,0 +1,65 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+// Font Stacks
+
+$font-url--google        : 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
+$font-family--primary    : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--secondary  : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Font Weights
+
+$font-weight--thin       : 100;
+$font-weight--light      : 300;
+$font-weight--medium     : 400;
+$font-weight--bold       : 700;
+$font-weight--ultra-bold : 900;
+
+
+// Text
+
+$base__font-size : 16px;
+$base__line      : 24px;
+$letter-space    : 1px;
+
+// Descriptive Base Colors
+
+$white    : #fff;
+$black    : #0b0b0b;
+
+$night         : rgb(4, 12, 44);
+$sharp-blue    : rgb(75, 106, 184);
+$grey-blue     : rgb(67, 61, 94);
+$red           : rgb(53, 32, 130);
+
+// Color Usage
+
+$color-primary   : $night;
+$color-secondary : $sharp-blue;
+$font-color1     : $white;
+$font-color1     : $black;
+
+
+// Color Palette Modifiers
+
+$color-palettes: (
+	orange: (
+		xx-light : lighten($night, 43%),
+		x-light  : lighten($night, 35%),
+	    light    : lighten($night, 12%),
+	    base     : $night,
+	 	dark     : darken($night, 8%),
+	 	x-dark   : darken($night, 16%)
+	),
+	black: (
+		light    : lighten($black, 10%),
+		base     : $black,
+		dark     : darken($black, 10%)
+	)
+);
+
+// Border Radius
+
+$br--default    : .4em;
+$br--round      : 50%;
