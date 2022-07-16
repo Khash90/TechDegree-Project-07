@@ -7,26 +7,39 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 5px 10px;
-    margin: 5px 41px;
+    margin: 5px 52px;
 }
 
 .home-icon{
     width: 10%;
-    padding: 20px;
+    padding: 18px;
     background: url(../../svgs/home.svg) no-repeat ;
+    &:hover{
+        cursor: pointer;
+    }
 }
 .bars-icon{
     width: 10%;
-    padding: 20px;
+    padding: 18px;
     background: url(../../svgs/bar-chart.svg) no-repeat ;
+    &:hover{
+        cursor: pointer;
+    }
 }
 .members-icon{
     width: 10%;
-    padding: 20px;
+    padding: 18px;
     background: url(../../svgs/members.svg) no-repeat ;
+    &:hover{
+        cursor: pointer;
+    }
 }
 .settings-icon{
     width: 10%;
-    padding: 20px;
+    padding: 18px;
     background: url(../../svgs/settings.svg) no-repeat ;
+    &:hover{
+        cursor: pointer;
+    }
 }
+
