@@ -485,6 +485,50 @@ ul li {
   border-bottom: 1px solid rgb(53, 32, 130);
 }
 
+.form-title {
+  margin: 5px 15px;
+}
+
+.main-form input,
+.main-form textarea {
+  margin: 10px 15px;
+  align-items: center;
+  background-color: rgb(192, 203, 209);
+}
+.main-form input:focus,
+.main-form textarea:focus {
+  background: rgb(117, 117, 167);
+  color: white;
+  border: 3px solid #1d0c2a;
+  transition: all 0.5s ease 0s;
+}
+
+.main-form {
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+}
+
+textarea {
+  height: 200px;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.main-form input {
+  height: 55px;
+  border-radius: 10px;
+}
+
+#submit-btn {
+  color: rgb(4, 12, 44);
+  margin-bottom: 10px;
+}
+
+.form {
+  border-bottom: 1px solid rgb(53, 32, 130);
+}
+
 .social {
   border-bottom: 1px solid rgb(53, 32, 130);
 }
@@ -535,7 +579,7 @@ ul li {
   height: 100vh;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 70px 60px 365px 270px 270px 450px 800px 750px 400px;
+  grid-template-rows: 70px 60px 365px 270px 270px 450px 800px 750px 410px 400px;
 }
 
 .nav {
