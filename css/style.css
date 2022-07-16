@@ -473,6 +473,18 @@ ul li {
   border-bottom: 1px solid blue;
 }
 
+.recent-title {
+  margin: 5px 15px;
+}
+
+.recent-details {
+  font-size: 15px;
+}
+
+.recentMembers {
+  border-bottom: 1px solid rgb(53, 32, 130);
+}
+
 .social {
   border-bottom: 1px solid rgb(53, 32, 130);
 }
@@ -523,7 +535,7 @@ ul li {
   height: 100vh;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 70px 60px 365px 270px 270px 450px 800px 400px 400px;
+  grid-template-rows: 70px 60px 365px 270px 270px 450px 800px 750px 400px;
 }
 
 .nav {
