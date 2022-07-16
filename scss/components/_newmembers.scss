@@ -1,0 +1,38 @@
+
+.newMembers{
+    border-bottom: 1px solid $purple;
+}
+.newmembers-title{
+    margin: 5px 15px;
+}
+.mem-one,
+.mem-two,
+.mem-three,
+.mem-four {
+    border-radius: $br--round;
+    margin: 15px auto;
+    width: 70px;
+}
+.member-one,
+.member-two,
+.member-three,
+.member-four {
+    display: flex;
+    flex-direction: column;
+    margin: 1px 20px;
+}
+.members-details{
+    text-align: center;
+    margin-right:  10px;
+    margin-top: 1px;
+    padding: 0;
+}
+.name{
+    margin: 0px 0;
+}
+
+.members-lines{
+    width: 98%;
+    margin: 0 auto;
+    border-bottom: 1px solid blue;
+}

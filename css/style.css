@@ -430,6 +430,49 @@ ul li {
   border-bottom: 1px solid rgb(53, 32, 130);
 }
 
+.newMembers {
+  border-bottom: 1px solid rgb(53, 32, 130);
+}
+
+.newmembers-title {
+  margin: 5px 15px;
+}
+
+.mem-one,
+.mem-two,
+.mem-three,
+.mem-four {
+  border-radius: 50%;
+  margin: 15px auto;
+  width: 70px;
+}
+
+.member-one,
+.member-two,
+.member-three,
+.member-four {
+  display: flex;
+  flex-direction: column;
+  margin: 1px 20px;
+}
+
+.members-details {
+  text-align: center;
+  margin-right: 10px;
+  margin-top: 1px;
+  padding: 0;
+}
+
+.name {
+  margin: 0px 0;
+}
+
+.members-lines {
+  width: 98%;
+  margin: 0 auto;
+  border-bottom: 1px solid blue;
+}
+
 .social {
   border-bottom: 1px solid rgb(53, 32, 130);
 }
@@ -480,7 +523,7 @@ ul li {
   height: 100vh;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 70px 60px 365px 270px 270px 450px 400px;
+  grid-template-rows: 70px 60px 365px 270px 270px 450px 800px 400px 400px;
 }
 
 .nav {
