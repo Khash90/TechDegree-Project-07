@@ -366,6 +366,14 @@ h2 {
   width: 117px;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
 /* ============================================= */
 /* Components Imports */
 /* ============================================= */
@@ -398,10 +406,6 @@ h2 {
   margin-right: auto;
 }
 
-.item2 {
-  border-right: 1px solid yellow;
-}
-
 .item2,
 .item3,
 .item4 {
@@ -423,6 +427,38 @@ h2 {
 
 .nav {
   background: rgb(75, 106, 184);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 10px;
+  margin: 5px 41px;
+}
+
+.home-icon {
+  width: 10%;
+  padding: 20px;
+  background: url(../../svgs/home.svg) no-repeat;
+}
+
+.bars-icon {
+  width: 10%;
+  padding: 20px;
+  background: url(../../svgs/bar-chart.svg) no-repeat;
+}
+
+.members-icon {
+  width: 10%;
+  padding: 20px;
+  background: url(../../svgs/members.svg) no-repeat;
+}
+
+.settings-icon {
+  width: 10%;
+  padding: 20px;
+  background: url(../../svgs/settings.svg) no-repeat;
 }
 
 .bell {
