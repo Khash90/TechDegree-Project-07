@@ -529,6 +529,10 @@ textarea {
   border-bottom: 1px solid rgb(53, 32, 130);
 }
 
+.settings-title {
+  margin: 5px 15px;
+}
+
 .social {
   border-bottom: 1px solid rgb(53, 32, 130);
 }
