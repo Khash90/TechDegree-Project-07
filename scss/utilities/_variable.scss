@@ -31,7 +31,7 @@ $black    : #0b0b0b;
 $night         : rgb(4, 12, 44);
 $sharp-blue    : rgb(75, 106, 184);
 $grey-blue     : rgb(67, 61, 94);
-$red           : rgb(53, 32, 130);
+$purple           : rgb(53, 32, 130);
 
 // Color Usage
 
@@ -44,7 +44,7 @@ $font-color1     : $black;
 // Color Palette Modifiers
 
 $color-palettes: (
-	orange: (
+	night: (
 		xx-light : lighten($night, 43%),
 		x-light  : lighten($night, 35%),
 	    light    : lighten($night, 12%),

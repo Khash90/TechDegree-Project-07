@@ -418,11 +418,69 @@ ul li {
   color: white;
 }
 
+.chart1 {
+  border-bottom: 1px solid rgb(53, 32, 130);
+}
+
+.chart2 {
+  border-bottom: 1px solid rgb(53, 32, 130);
+}
+
+.chart3 {
+  border-bottom: 1px solid rgb(53, 32, 130);
+}
+
+.social {
+  border-bottom: 1px solid rgb(53, 32, 130);
+}
+
+.social-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-title {
+  margin: 5px 15px;
+}
+
+.fb-stat,
+.inst-stat,
+.twit-stat {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(90, 198, 210);
+  border: 1px solid rgb(75, 106, 184);
+  border-radius: 10px;
+  margin: 6px 15px;
+  height: 123px;
+}
+
+.fb-icon,
+.inst-icon,
+.twit-icon {
+  width: 85px;
+  margin: 0px 15px;
+}
+
+.social-box ul :nth-child(1) {
+  font-weight: 400;
+  font-size: 1.5em;
+  margin: 0 -19px;
+  color: rgb(4, 12, 44);
+}
+
+.social-box ul :nth-child(2) {
+  font-size: 3em;
+  font-weight: 100;
+  margin: -13px -20px;
+  color: rgb(60, 86, 122);
+}
+
 .grid {
   height: 100vh;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 70px 60px repeat(8, 500px);
+  grid-template-rows: 70px 60px 365px 270px 270px 450px 400px;
 }
 
 .nav {

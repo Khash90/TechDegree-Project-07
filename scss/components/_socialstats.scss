@@ -1,0 +1,39 @@
+.social{
+    border-bottom: 1px solid $purple;
+}
+.social-box{
+    display: flex;
+    flex-direction: column;
+}
+.social-title{
+    margin: 5px 15px;
+}
+.fb-stat,
+.inst-stat,
+.twit-stat {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(90, 198, 210);
+    border: 1px solid $sharp-blue;
+    border-radius: 10px;
+    margin: 6px 15px;
+    height: 123px;
+}
+.fb-icon,
+.inst-icon,
+.twit-icon {
+    width: 85px;
+    margin: 0px 15px;
+}
+.social-box ul :nth-child(1){
+    font-weight: $font-weight--medium;
+    font-size: 1.5em;
+    margin: 0 -19px;
+    color: $night;
+}
+.social-box ul :nth-child(2){
+    font-size: 3em;
+    font-weight: $font-weight--thin;
+    margin: -13px -20px;
+    color: rgb(60, 86, 122);
+}
