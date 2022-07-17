@@ -1,18 +1,63 @@
+.settings{
+    border-bottom: 2px solid red;
+}
 .settings-title{
     margin: 15px 15px;
 }
-.email-btn{
-    width: 90%;
-    
-    height: 150px;
-    margin: 20px auto;
-    border: 1px solid red;
-    display: flex;
-    // justify-content: space-between;
-    flex-direction: row;
-    
-}
 
-.input{
-    margin-top: 15px;
+.email-btn{
+    margin: 30px;
+}
+.switch-light {
+    width: 98%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  label strong {
+    flex-basis: 210px;
+    
+    font-weight: $font-weight--medium ;
+  }
+  
+  .switch-ios.switch-light > span {
+    width: 125px;
+  }
+ .span5{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: aqua;
+ }
+
+
+ //timezone
+  .timezone{
+    width: 90%;
+    height: 14%;
+    align-items: center;
+    margin: 75px auto;
+    border: 1px solid red;
+  }
+
+  //buttons
+
+.btn-style1{
+    width: 40%;
+    height: 15%;
+    border-radius: 5px;
+    margin: -37px 19px;
+    background-color: rgb(32, 62, 150);
+    color: white;
+}
+.btn-style2{
+    width: 40%;
+    height: 15%;
+    border-radius: 5px;
+    float: right;
+    margin: -44px 22px;
+    background-color: rgb(39, 160, 74);
+    color: white;
+    
 }
