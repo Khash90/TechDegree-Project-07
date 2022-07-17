@@ -530,7 +530,15 @@ textarea {
 }
 
 .settings-title {
-  margin: 5px 15px;
+  margin: 15px 15px;
+}
+
+.email-btn {
+  width: 90%;
+  margin: 20px auto;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
 }
 
 .social {
