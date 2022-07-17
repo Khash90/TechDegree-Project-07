@@ -1,5 +1,5 @@
 const alertBanner = document.getElementById('alert');
-const trafficCanvas = document.getElementById('traffic-chart');
+const trafficCanvas = document.getElementById('traffic-chart').getContext('2d');
 
 
 alertBanner.innerHTML = `
@@ -48,10 +48,10 @@ alertBanner.addEventListener('click', e => {
          }
      };
 
-  let trafficChart = new Chart(trafficCanvas, {
-type: 'line',
-data: trafficData,
-options: trafficOptions
-});
+  let trafficChart = new  Chart(trafficCanvas, {
+        type: 'line',
+        data: trafficData,
+        options: trafficOptions
+    });
 
         

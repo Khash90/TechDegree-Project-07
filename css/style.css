@@ -456,16 +456,6 @@ ul li {
   font-size: 17px;
 }
 
-.widget-container-full {
-  margin: 10px 0;
-  height: 71%;
-}
-
-.traffic-chart {
-  width: 100%;
-  height: 100%;
-}
-
 .alert-banner {
   display: flex;
   flex-direction: row;
