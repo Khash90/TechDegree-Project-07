@@ -25,6 +25,7 @@
     margin: 0 10px;
     font-size: 17px;
 }
+<<<<<<< HEAD
 
 
 .alert-banner{
@@ -45,12 +46,24 @@
 }
 
 
-// .widget-container-full{
-//     margin: 10px 0;
-//     height: 71%;
-//    border: 1px solid black;
-// }
-// .traffic-chart{
+.widget-container-full{
+    margin: 10px 0;
+     height: 71%;
+   border: 1px solid black;
+ }
+ .traffic-chart{
    
     
-// }
+ }
+=======
+.widget-container-full{
+    margin: 10px 0;
+    height: 71%;
+   
+}
+.traffic-chart{
+   
+    width: 100%;
+    height: 100%;
+}
+>>>>>>> parent of 2eda29c (making line chart)
