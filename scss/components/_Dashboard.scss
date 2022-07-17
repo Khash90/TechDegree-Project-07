@@ -35,3 +35,20 @@
     width: 100%;
     height: 100%;
 }
+
+.alert-banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    // border: 1px solid black;
+    border-radius: 6px;
+    width: 90%;
+    color: white;
+    background-color: rgb(89, 89, 177);
+    height: 50px;
+}
+.alert-banner-close{
+    margin: 15px 29px;
+    color: white;
+}

@@ -466,6 +466,23 @@ ul li {
   height: 100%;
 }
 
+.alert-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 6px;
+  width: 90%;
+  color: white;
+  background-color: rgb(89, 89, 177);
+  height: 50px;
+}
+
+.alert-banner-close {
+  margin: 15px 29px;
+  color: white;
+}
+
 .newMembers {
   border-bottom: 1px solid rgb(53, 32, 130);
 }
