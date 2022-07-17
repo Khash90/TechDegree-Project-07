@@ -3,8 +3,16 @@
 }
 .email-btn{
     width: 90%;
+    
+    height: 150px;
     margin: 20px auto;
     border: 1px solid red;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
+    flex-direction: row;
+    
+}
+
+.input{
+    margin-top: 15px;
 }
