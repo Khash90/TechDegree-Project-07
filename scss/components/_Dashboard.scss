@@ -23,33 +23,77 @@
 }
 .traffic-list li{
     
-    margin: 0 17px;
+    margin: 0 12px;
     font-size: 17px;
 }
 
-
-
+.alert{
+    
+    width: 90%;
+    margin: 0 auto;
+}
+.alert-text{
+    text-align: center;
+    margin: 1px auto;
+}
 .alert-banner{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0 0;
     // border: 1px solid black;
     border-radius: 6px;
-    width: 90%;
+    width: 98%;
     color: white;
     background-color: rgb(89, 89, 177);
     height: 50px;
+    border: 1px solid black;
 }
 .alert-banner-close{
-    margin: 15px 29px;
+    margin: 1px 29px;
     color: white;
 }
-
+.dash-header{
+    display: flex;
+    flex-direction: row;
+}
+.tab{
+    background-color: aqua;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 65%;
+   margin-bottom: 3px;
+    
+}
 
 .widget-container-full{
-    margin: 10px 0;
-     height: 71%;
-   border: 1px solid black;
+    width: 80%;
+    margin: 31px 24px;
+    height: 41%;
+   
+    
+ }
+ .traffic-chart{
+    width: 100%;
+    height: 100%;
+    
  }
 
+//chart 2///////////////////
+.daily-title {
+    margin: 15px 15px;
+}
+.daily-chart{
+    width: 100%;
+    height: 100%;
+}
+.daily-container-full{
+    width: 88%;
+    margin: 31px 24px;
+    height: 58%;
+    
+}
+.daily-chart{
+    border: 1px solid black;
+    margin: 0 -8px;
+}
