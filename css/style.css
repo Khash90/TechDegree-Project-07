@@ -1,24 +1,41 @@
-/* Error: expected "{".
- *    ,
- * 69 | >>>>>>> parent of 2eda29c (making line chart)
- *    |                                              ^
- *    '
- *   scss\components\_Dashboard.scss 69:46  @import
- *   scss\components\_index.scss 7:10       @import
- *   scss\style.scss 7:10                   root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 69 \2502  >>>>>>> parent of 2eda29c (making line chart)\d\a    \2502                                               ^\a    \2575 \a   scss\\components\\_Dashboard.scss 69:46  @import\a   scss\\components\\_index.scss 7:10       @import\a   scss\\style.scss 7:10                   root stylesheet';
+/* ============================================= */
+/* Sub-Folder Imports */
+/* ============================================= */
+/* ============================================= */
+/* Utilities Imports */
+/* ============================================= */
+/* ============================================= */
+/* Base Imports */
+/* ============================================= */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
 }
-<<<<<<< HEAD
-=======
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -413,6 +430,55 @@ ul li {
   border-bottom: 1px solid rgb(53, 32, 130);
 }
 
+.headline {
+  margin: 15px 15px;
+}
+
+.traffic-title {
+  margin: 15px 15px;
+}
+
+.traffic-list-container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.traffic-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: -10px -53px;
+}
+
+.traffic-list li {
+  padding: 0 10px;
+  margin: 0 10px;
+  font-size: 17px;
+}
+
+.alert-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 6px;
+  width: 90%;
+  color: white;
+  background-color: rgb(89, 89, 177);
+  height: 50px;
+}
+
+.alert-banner-close {
+  margin: 15px 29px;
+  color: white;
+}
+
+.widget-container-full {
+  margin: 10px 0;
+  height: 71%;
+  border: 1px solid black;
+}
+
 .newMembers {
   border-bottom: 1px solid rgb(53, 32, 130);
 }
@@ -624,7 +690,7 @@ label strong {
   height: 100vh;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 70px 60px 365px 270px 270px 450px 800px 750px 410px 430px;
+  grid-template-rows: 70px 60px 380px 280px 280px 450px 800px 750px 410px 430px;
 }
 
 .nav {
@@ -682,4 +748,3 @@ label strong {
 }
 
 /*# sourceMappingURL=style.css.map */
->>>>>>> parent of 641cdf8 (traffic dashboard)
