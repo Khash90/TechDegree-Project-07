@@ -438,21 +438,16 @@ ul li {
   margin: 15px 15px;
 }
 
-.traffic-list-container {
-  width: 95%;
-  margin: 0 auto;
-}
-
 .traffic-list {
+  width: 90%;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  margin: -10px -53px;
+  margin: -10px -38px;
 }
 
 .traffic-list li {
-  padding: 0 10px;
-  margin: 0 10px;
+  margin: 0 17px;
   font-size: 17px;
 }
 
