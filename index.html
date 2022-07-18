@@ -68,11 +68,11 @@
  <nav class="main-nav">
      <!-- Navbar -->
      <div class="nav">
-         <ul class="navbar">
-            <a href=""><li class="home-icon"></li></a>
-            <a href=""><li class="bars-icon"></li></a>
-            <a href=""><li class="members-icon"></li></a>
-            <a href=""><li class="settings-icon"></li></a>
+         <ul class="navbar" id="navbar">
+            <a href=""><li class="home-icon icon"></li></a>
+            <a href=""><li class="bars-icon icon"></li></a>
+            <a href=""><li class="members-icon icon"></li></a>
+            <a href=""><li class="settings-icon icon"></li></a>
          </ul>
      </div>
  </nav>
@@ -90,17 +90,17 @@
         <div class="alert" id="alert" >
             
         </div>
-
+         <div class="traffic">
         <h5 class="traffic-title">TRAFFIC</h5>
-
-        <div class="traffic-list-container">
+        <!-- <div class="traffic-list-container"> -->
         <ul class="traffic-list traffic-nav">
             <li id="hour-btn">Hourly</li>
             <li id="daily-btn">Daily</li>
             <li id="weekly-btn" class="active">Weekly</li>
             <li id="monthly-btn">Monthly</li>
         </ul>
-        </div>
+        <!-- </div> -->
+         </div>
 
         <div class="widget-container-full">
 
@@ -111,6 +111,7 @@
      
     
      <!-- Chart2 Barchart -->
+     <div class="chart23">
      <div class="chart2">
         <h4 class="daily-title">DAILY TRAFFIC</h4>
         <div class="daily-container-full">
@@ -130,10 +131,12 @@
         </div> 
 
      </div>
+    </div>
 
 
      <div class="social social-box">
-                <h4 class="social-title">SOCIAL STATS</h4> 
+            <h4 class="social-title">SOCIAL STATS</h4> 
+            <div class="socialrow">
                 <div class="fb-stat">
                     <img class="fb-icon" src="svgs/facebook.svg" alt="facebook">
                     <ul class="fb-name-num">
@@ -155,7 +158,7 @@
                         <li>22,189</li>
                     </ul>
                 </div>    
-
+            </div>
 
      </div>
 

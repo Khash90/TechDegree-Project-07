@@ -11,6 +11,7 @@
      .main-container{
         grid-area: main;
      }
+
     .grid{
        
         grid-template-columns: 80px 1fr;
@@ -18,11 +19,9 @@
         grid-template-areas: 
         "header header "
         "nav main"
-        "nav main"
-        
         ;
     }
-    .navbar{
+    .main-nav{
         display: flex;
         flex-direction: column;
         

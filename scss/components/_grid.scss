@@ -2,5 +2,97 @@
     height: 100vh;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 70px 60px  330px 250px 250px 450px 800px 750px 410px 430px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header"
+    "navbar navbar"
+    "main main"
+    ;
+  }
+
+  header{
+    grid-area: header;
+  }
+  nav {
+    grid-area: navbar;
+  }
+  main{
+    grid-area: main;
+  }
+
+  @media (min-width: 768px){
+        .grid{
+          grid-template-areas: 
+          "header header"
+          "navbar main"
+          "navbar main"
+          ;
+        }
+        .nav{
+          height: 100%;
+        }
+        #navbar{
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5px 10px;
+        margin: 0 10px;
+        }
+        .icon{
+          margin: 15px 0;
+        }
+        .traffic  {
+          width: 95%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin: 13px 4px;
+        }
+        .traffic-list{
+          width: 374px;
+        margin: 12px -25px;
+        }
+        .alert-banner{
+          margin: 10px 0;
+        }
+        .notify-box{
+          left: 573px;
+        }
+        .widget-container-full{
+          width: 92%;
+        
+        }
+        .chart23{
+          display: flex;
+          flex-direction: row;
+        }
+        .chart2{
+          width:50%;
+
+        }
+        .chart3{
+          width: 50%;
+          border-left: 1px solid $purple;
+        }
+        .socialrow{
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+        }
+
+        .fb-stat,
+        .inst-stat,
+        .twit-stat{
+          margin: 14px 10px;
+          height: 97px;
+          width: 55%;
+        }
+        
+        .social-box ul :nth-child(1){
+          font-size: 1.2em;
+           margin: 0 -42px;
+        }
+        .social-box ul :nth-child(2){
+          font-size: 2em;
+           margin: -13px -43px;
+        }
   }
