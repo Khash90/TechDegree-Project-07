@@ -47,7 +47,7 @@
     width: 40%;
     height: 15%;
     border-radius: 5px;
-    margin: -37px 19px;
+    // margin: -37px 19px;
     background-color: rgb(32, 62, 150);
     color: white;
 }
@@ -55,9 +55,18 @@
     width: 40%;
     height: 15%;
     border-radius: 5px;
-    float: right;
-    margin: -44px 22px;
+   
+    
     background-color: rgb(39, 160, 74);
     color: white;
     
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 10px;
 }

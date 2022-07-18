@@ -128,6 +128,7 @@ alertBanner.addEventListener('click', e => {
     "Oct",
     "Nov",
     "Dec",]
+
     trafficChart.update();
   });
 
