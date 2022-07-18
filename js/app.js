@@ -1,7 +1,26 @@
 
 const alertBanner = document.getElementById('alert');
 const trafficCanvas = document.getElementById('traffic-chart').getContext('2d');
+const bell = document.getElementsByClassName("bell")[0];
+const boxItem = document.querySelectorAll(".notify-close");
+const greendot = document.getElementById("greendot");
 
+
+// Notification banner
+document.querySelector(".bell").addEventListener("click", (e) => {
+    if (e.target === bell) {
+      box.classList.toggle("show");
+      greendot.classList.toggle("displaynone");
+    }
+  });
+
+  // ---> EVENT LISTENER TO CLOSE THE NOTIFICATION BANNER --->
+boxItem.forEach((item) => {
+    item.addEventListener("click", (e) => {
+      const button = e.target;
+      button.closest(".notify-item").remove();
+    });
+  });
 
 alertBanner.innerHTML = `
 <div class="alert-banner">
@@ -87,3 +106,39 @@ alertBanner.addEventListener('click', e => {
         options: dailyOptions
         });
         
+
+//chart3
+const mobileCanvas = document.getElementById("mobile-chart");
+
+const mobileData = {
+    labels: ["Desktop", "Tablet", "Phoones"],
+    datasets: [{
+        label: '# of Users',
+        data: [2000, 550, 500],
+        borderWidth: 0,
+        backgroundColor:[
+            '#7477BF',
+            '#78CF82',
+            '#51B6C8'
+        ]
+    }]
+};
+
+const mobileOptions = {
+    aspectRatio: 1.9,
+    plugins: {
+        legend: {
+            position: 'right',
+            labels: {
+                boxWidth: 20,
+                fontStyle: 'bold',
+            }
+        }
+    }
+};
+
+let mobileChart = new Chart(mobileCanvas, {
+    type: 'doughnut',
+    data: mobileData,
+    options: mobileOptions
+});
