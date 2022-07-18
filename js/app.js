@@ -147,9 +147,7 @@ alertBanner.addEventListener('click', e => {
                 backgroundColor: 'rgba(112, 104, 201, .5)',
                 fill: true,
                 aspectRatio: 2.5,
-                animation: {
-                duration: 0
-                },
+               
                 scales: {
                 y: {
                 beginAtZero: true

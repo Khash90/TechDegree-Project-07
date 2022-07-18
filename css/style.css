@@ -447,8 +447,9 @@ ul li {
 }
 
 .traffic-list li {
-  margin: 0 12px;
+  margin: 0 7px;
   font-size: 17px;
+  padding: 8px;
 }
 
 #hour-btn:hover,
