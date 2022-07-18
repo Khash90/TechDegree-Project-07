@@ -1,0 +1,32 @@
+
+
+
+@media (min-width: 768px) {
+    .main-header {
+        grid-area: header;
+     }
+     .main-nav{
+        grid-area: nav;
+     }
+     .main-container{
+        grid-area: main;
+     }
+    .grid{
+       
+        grid-template-columns: 80px 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header header "
+        "nav main"
+        "nav main"
+        
+        ;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+   
+}
