@@ -14,7 +14,7 @@ document.querySelector(".bell").addEventListener("click", (e) => {
     }
   });
 
-  // ---> EVENT LISTENER TO CLOSE THE NOTIFICATION BANNER --->
+  // EVENT LISTENER TO CLOSE THE NOTIFICATION BANNER 
 boxItem.forEach((item) => {
     item.addEventListener("click", (e) => {
       const button = e.target;
@@ -22,6 +22,8 @@ boxItem.forEach((item) => {
     });
   });
 
+
+// alert tab
 alertBanner.innerHTML = `
 <div class="alert-banner">
 <p class="alert-text"><strong>Alert:</strong> You have unread messages</p>
@@ -37,6 +39,99 @@ alertBanner.addEventListener('click', e => {
      }
     });
 
+
+    //update traffic on click
+    const hourBtn = document.getElementById("hour-btn");
+    const dailyBtn = document.getElementById("daily-btn");
+    const weeklyBtn = document.getElementById("weekly-btn");
+    const monthlyBtn = document.getElementById("monthly-btn");
+
+    hourBtn.addEventListener("click", (e) => {
+        hourBtn.className = "active"
+        dailyBtn.className = '';
+        weeklyBtn.className = '';
+        monthlyBtn.className = '';
+
+        trafficChart.data.datasets[0].data = [100, 200, 90, 120, 340, 220, 180, 380, 450, 400, 100];
+        trafficChart.data.labels = 
+        ["10am",
+        "11am",
+        "12pm",
+        "1pm",
+        "2pm",
+        "3pm",
+        "4pm",
+        "5pm",
+        "6pm",
+        "7pm",
+        "8pm",]
+        trafficChart.update();
+  });
+  dailyBtn.addEventListener("click", (e) => {
+    hourBtn.className = ""
+    dailyBtn.className = 'active';
+    weeklyBtn.className = '';
+    monthlyBtn.className = '';
+  
+    trafficChart.data.datasets[0].data = [500, 300, 150, 450, 380, 120, 550];
+    trafficChart.data.labels = 
+    ["Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"]
+    trafficChart.update();
+  });
+  weeklyBtn.addEventListener("click", (e) => {
+    hourBtn.className = ""
+    dailyBtn.className = '';
+    weeklyBtn.className = 'active';
+    monthlyBtn.className = '';
+  
+    trafficChart.data.datasets[0].data = [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500, 2500]
+    trafficChart.data.labels = 
+    [
+      "16-22",
+      "23-29",
+      "30-5",
+      "6-12",
+      "13-19",
+      "20-26",
+      "27-3",
+      "4-10",
+      "11-17",
+      "18-24",
+      "25-31",
+    ]
+    trafficChart.update();
+  });
+  
+  monthlyBtn.addEventListener("click", (e) => {
+    hourBtn.className = ""
+    dailyBtn.className = '';
+    weeklyBtn.className = '';
+    monthlyBtn.className = 'active';
+  
+    trafficChart.data.datasets[0].data = [3000, 2000, 3500, 5000, 7000, 9000, 7500, 7000, 6000, 3000, 1500, 2500];
+    trafficChart.data.labels = 
+    ["Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",]
+    trafficChart.update();
+  });
+
+//chart 1
     let trafficData = {
         labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3",
         "4-10", "11-17", "18-24", "25-31"],

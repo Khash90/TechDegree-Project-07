@@ -26,6 +26,20 @@
     margin: 0 12px;
     font-size: 17px;
 }
+#hour-btn:hover,
+#daily-btn:hover,
+#weekly-btn:hover,
+#monthly-btn:hover {
+  background-color: rgb(32, 20, 63);
+  border-radius: 13px;
+  color: white;
+  transition: all .5s ease-in-out;
+}
+.active {
+  background-color: rgb(32, 20, 63);
+  border-radius: 15px;
+  color: white;
+}
 
 .alert{
     
