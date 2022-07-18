@@ -19,20 +19,47 @@
 .member-four {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    place-items: center;
     margin: 1px 20px;
 }
-.members-details{
-    text-align: center;
-    margin-right:  10px;
-    margin-top: 1px;
-    padding: 0;
+.member-details{
+        text-align: center;
+        margin: 0;
+        & p{
+            margin: 0;
+        }
 }
-.name{
-    margin: 0px 0;
-}
+ .date{
+    margin: 0;
+ }
 
 .members-lines{
     width: 98%;
     margin: 0 auto;
     border-bottom: 1px solid blue;
 }
+
+.activity-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    margin: 1px 20px;
+    & p{
+        margin: 0;
+    }
+}
+.member-text p{
+    text-align: center;
+}
+
+#margin-bot{
+    margin-bottom: 28px;
+}
+
+
+.activity-btn{
+    display: none;
+}
+

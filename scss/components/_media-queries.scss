@@ -1,31 +1,172 @@
 
 
 
-@media (min-width: 768px) {
-    .main-header {
-        grid-area: header;
-     }
-     .main-nav{
-        grid-area: nav;
-     }
-     .main-container{
-        grid-area: main;
-     }
+// @media (min-width: 768px) {
+//     .main-header {
+//         grid-area: header;
+//      }
+//      .main-nav{
+//         grid-area: nav;
+//      }
+//      .main-container{
+//         grid-area: main;
+//      }
 
-    .grid{
+//     .grid{
        
-        grid-template-columns: 80px 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "header header "
-        "nav main"
-        ;
-    }
-    .main-nav{
-        display: flex;
-        flex-direction: column;
+//         grid-template-columns: 80px 1fr;
+//         grid-template-rows: auto;
+//         grid-template-areas: 
+//         "header header "
+//         "nav main"
+//         ;
+//     }
+//     .main-nav{
+//         display: flex;
+//         flex-direction: column;
         
         
-    }
+//     }
    
-}
+// }
+
+  @media (min-width: 768px){
+        .grid{
+          grid-template-areas: 
+          "header header"
+          "navbar main "
+          
+          ;
+        }
+        .nav{
+          height: 100%;
+          width: 99%;
+        }
+        #navbar{
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5px 1px;
+         margin: 0 10px;
+        }
+        .icon{
+          margin: 15px 0;
+        }
+        .traffic  {
+          width: 95%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin: 13px 4px;
+        }
+        .traffic-list{
+          width: 374px;
+        margin: 12px -25px;
+        }
+        .alert-banner{
+          margin: 10px 0;
+        }
+        .notify-box{
+          left: 573px;
+        }
+        .widget-container-full{
+          width: 92%;
+        
+        }
+        .chart23{
+          display: flex;
+          flex-direction: row;
+        }
+        .chart2{
+          width:50%;
+
+        }
+        .chart3{
+          width: 50%;
+          border-left: 1px solid $purple;
+        }
+        .socialrow{
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+        }
+
+        .fb-stat,
+        .inst-stat,
+        .twit-stat{
+          margin: 14px 10px;
+          height: 97px;
+          width: 55%;
+        }
+        
+        .social-box ul :nth-child(1){
+          font-size: 1.2em;
+           margin: 0 -42px;
+        }
+        .social-box ul :nth-child(2){
+          font-size: 2em;
+           margin: -13px -43px;
+        }
+      .member-one,
+      .member-two,
+      .member-three,
+      .member-four{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+      .mem{
+        margin-right: auto;
+      }
+      
+      .member-details p, a{
+        margin: 0 10px;
+      }
+      .activity-btn{
+        display: block;
+      }
+      #margin-bot{
+        margin-bottom: -8px;
+        
+      }
+      .m1-time{
+        padding-right: 307px;
+      }
+      .m2-time{
+        padding-right: 300px;
+      }
+      .m3-time{
+        padding-right:343px;
+      }
+     .m4-time{
+      padding-right: 214px;
+     } 
+  }
+
+
+  @media (min-width: 1024px){
+     .members-bigscreen{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+     }
+     .newMembers{
+        width: 50%;
+     }
+     .recentMembers{
+        border-left: 1px solid $purple;
+        width: 50%;
+     }
+     .settings-bigscreen{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+     }
+     .form  {
+        width: 50%;
+     }
+     .settings{
+        width:50%;
+        border-left: 1px solid $purple;
+     }
+    
+  }

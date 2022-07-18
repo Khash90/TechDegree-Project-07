@@ -572,24 +572,50 @@ ul li {
 .member-four {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  place-items: center;
   margin: 1px 20px;
 }
 
-.members-details {
+.member-details {
   text-align: center;
-  margin-right: 10px;
-  margin-top: 1px;
-  padding: 0;
+  margin: 0;
+}
+.member-details p {
+  margin: 0;
 }
 
-.name {
-  margin: 0px 0;
+.date {
+  margin: 0;
 }
 
 .members-lines {
   width: 98%;
   margin: 0 auto;
   border-bottom: 1px solid blue;
+}
+
+.activity-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  margin: 1px 20px;
+}
+.activity-container p {
+  margin: 0;
+}
+
+.member-text p {
+  text-align: center;
+}
+
+#margin-bot {
+  margin-bottom: 28px;
+}
+
+.activity-btn {
+  display: none;
 }
 
 .recent-title {
@@ -677,10 +703,12 @@ label strong {
 }
 
 .span5 {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 52px;
   border-radius: 5px;
-  background-color: aqua;
+  background-color: rgb(20, 37, 76);
+  color: white;
+  margin: 0 15px;
 }
 
 .timezone {
@@ -692,28 +720,31 @@ label strong {
 }
 
 .btn-style1 {
-  width: 40%;
-  height: 15%;
+  width: 50%;
+  line-height: 35px;
   border-radius: 5px;
-  background-color: rgb(32, 62, 150);
+  background-color: rgb(24, 38, 82);
   color: white;
+  text-align: center;
+  margin-left: 7px;
 }
 
 .btn-style2 {
-  width: 40%;
-  height: 15%;
+  width: 50%;
+  line-height: 35px;
   border-radius: 5px;
-  background-color: rgb(39, 160, 74);
+  background-color: rgb(81, 11, 11);
   color: white;
+  text-align: center;
+  margin-right: -7px;
 }
 
 .buttons {
+  width: 90%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
   gap: 10px;
+  margin: 15px 10px;
 }
 
 #greendot {
@@ -832,11 +863,14 @@ label strong {
   color: rgb(60, 86, 122);
 }
 
+.socialrow {
+  margin-bottom: 15px;
+}
+
 .grid {
   height: 100vh;
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
+  grid-template-columns: 80px 1fr;
   grid-template-areas: "header header" "navbar navbar" "main main";
 }
 
@@ -854,17 +888,18 @@ main {
 
 @media (min-width: 768px) {
   .grid {
-    grid-template-areas: "header header" "navbar main" "navbar main";
+    grid-template-areas: "header header" "navbar main ";
   }
 
   .nav {
     height: 100%;
+    width: 99%;
   }
 
   #navbar {
     flex-direction: column;
     justify-content: space-between;
-    padding: 5px 10px;
+    padding: 5px 1px;
     margin: 0 10px;
   }
 
@@ -934,32 +969,84 @@ main {
     font-size: 2em;
     margin: -13px -43px;
   }
-}
-@media (min-width: 768px) {
-  .main-header {
-    grid-area: header;
-  }
 
-  .main-nav {
-    grid-area: nav;
-  }
-
-  .main-container {
-    grid-area: main;
-  }
-
-  .grid {
-    grid-template-columns: 80px 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "header header " "nav main";
-  }
-
-  .main-nav {
+  .member-one,
+.member-two,
+.member-three,
+.member-four {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .mem {
+    margin-right: auto;
+  }
+
+  .member-details p, a {
+    margin: 0 10px;
+  }
+
+  .activity-btn {
+    display: block;
+  }
+
+  #margin-bot {
+    margin-bottom: -8px;
+  }
+
+  .m1-time {
+    padding-right: 307px;
+  }
+
+  .m2-time {
+    padding-right: 300px;
+  }
+
+  .m3-time {
+    padding-right: 343px;
+  }
+
+  .m4-time {
+    padding-right: 214px;
+  }
+}
+@media (min-width: 1024px) {
+  .members-bigscreen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .newMembers {
+    width: 50%;
+  }
+
+  .recentMembers {
+    border-left: 1px solid rgb(53, 32, 130);
+    width: 50%;
+  }
+
+  .settings-bigscreen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form {
+    width: 50%;
+  }
+
+  .settings {
+    width: 50%;
+    border-left: 1px solid rgb(53, 32, 130);
   }
 }
 .nav {
+  background: rgb(75, 106, 184);
+}
+
+nav {
   background: rgb(75, 106, 184);
 }
 
