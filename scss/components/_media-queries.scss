@@ -156,6 +156,18 @@
         border-left: 1px solid $purple;
         width: 50%;
      }
+     .m1-time {
+        padding-right: 247px;
+    }
+    .m2-time {
+        padding-right: 245px;
+    }
+     .m3-time {
+        padding-right: 244px;
+    }
+    .m4-time {
+    padding-right: 210px;
+}
      .settings-bigscreen{
         display: flex;
         flex-direction: row;
@@ -168,5 +180,13 @@
         width:50%;
         border-left: 1px solid $purple;
      }
-    
+    .span5{
+        margin-top: 78px;
+    }
+    .buttons{
+        margin: 20px 10px;
+    }
+    .btn-style1{
+        line-height: 42px;
+    }
   }

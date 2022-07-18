@@ -638,7 +638,7 @@ ul li {
 .main-form textarea {
   margin: 10px 15px;
   align-items: center;
-  background-color: rgb(192, 203, 209);
+  background-color: rgb(134, 231, 238);
 }
 .main-form input:focus,
 .main-form textarea:focus {
@@ -716,7 +716,6 @@ label strong {
   height: 14%;
   align-items: center;
   margin: 75px auto;
-  border: 1px solid red;
 }
 
 .btn-style1 {
@@ -1027,6 +1026,22 @@ main {
     width: 50%;
   }
 
+  .m1-time {
+    padding-right: 247px;
+  }
+
+  .m2-time {
+    padding-right: 245px;
+  }
+
+  .m3-time {
+    padding-right: 244px;
+  }
+
+  .m4-time {
+    padding-right: 210px;
+  }
+
   .settings-bigscreen {
     display: flex;
     flex-direction: row;
@@ -1040,6 +1055,18 @@ main {
   .settings {
     width: 50%;
     border-left: 1px solid rgb(53, 32, 130);
+  }
+
+  .span5 {
+    margin-top: 78px;
+  }
+
+  .buttons {
+    margin: 20px 10px;
+  }
+
+  .btn-style1 {
+    line-height: 42px;
   }
 }
 .nav {
