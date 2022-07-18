@@ -253,7 +253,7 @@
     <!-- Message User -->
     <div class="form">
         <h4 class="form-title">MESSAGE USER</h4>
-        <form class="main-form" action="form">
+        <form class="main-form">
             <input id="search" type="text" placeholder="Search For User" list="members-list" required>
             <datalist id="members-list">
                 <option >Victoria Chambers</option>
@@ -262,7 +262,7 @@
                 <option >Dan Oliver</option>
             </datalist>
             <textarea name="msguser" id="msguser" placeholder="Message For User" rows="10" required></textarea>
-            <input id="submit-btn" type="submit" value="SEND">
+            <input id="submit-btn" class="send" type="submit" value="SEND">
         </form>
 
     </div>
@@ -273,7 +273,7 @@
             <!-- first switch -->
             <div id="email-btn"class="email-btn">
                 <label class="hide switch-light switch-ios" onclick="">
-                    <input class="input" type="checkbox">
+                    <input id="settingsCheckboxEmail" class="input" type="checkbox">
                     <strong>
                      Send Email Notification
                     </strong>
@@ -288,7 +288,7 @@
             <!-- Second Switch -->
             <div class="email-btn">
                 <label class="hide switch-light switch-ios" onclick="">
-                    <input class="input" type="checkbox">
+                    <input id="settingsCheckboxProfile" class="input" type="checkbox">
                     <strong>
                      Set Profile to Public
                     </strong>
@@ -303,7 +303,7 @@
 
          <!-- TimeZone -->
          <div class="timezone">
-            <select name="timezone_offset" id="timezone-offset" class="span5">
+            <select name="timezone_offset" id="timezone" class="span5">
                 <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
                 <option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
                 <option value="-10:00">(GMT -10:00) Hawaii</option>
@@ -347,8 +347,8 @@
         </div>
         
         <!-- buttons -->
-        <button class="btn-style1" type="submit">Save</button>
-        <button class="btn-style2" type="submit">CANCEL</button>
+        <button id="save" class="btn-style1" type="submit">Save</button>
+        <button id="cancel" class="btn-style2" type="submit">CANCEL</button>
 
     </div>
          

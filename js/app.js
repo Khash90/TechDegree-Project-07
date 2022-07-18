@@ -237,3 +237,54 @@ let mobileChart = new Chart(mobileCanvas, {
     data: mobileData,
     options: mobileOptions
 });
+
+//Message send section
+const user = document.getElementById("search");
+const message = document.getElementById("msguser");
+const send = document.getElementById("submit-btn");
+send.addEventListener("click", () => {
+    // ensure user and message fields are filled out
+    if (user.value === "" && message.value === "") {
+      alert("Please fill out user and message fields before sending");
+    } else if (user.value === "") {
+      alert("Please fill out user field before sending");
+    } else if (message.value === "") {
+      alert("Please fill out message field before sending");
+    } else {
+      alert(`Message successfully sent to: ${user.value}`);
+    }
+  });
+  
+//Local storage and settings
+const saveBtn = document.getElementById("save");
+const cancelBtn = document.getElementById("cancel");
+const settingsCheckboxEmail = document.getElementById("settingsCheckboxEmail");
+const settingsCheckboxProfile = document.getElementById("settingsCheckboxProfile");
+const Timezones = document.getElementById("timezone");
+
+saveBtn.onclick = function () {
+    const emailOnOff = document.getElementById("settingsCheckboxEmail").checked;
+    const profileOnOff = document.getElementById("settingsCheckboxProfile").checked;
+    const timezone = document.getElementById("timezone").value;
+    localStorage.setItem("Send Email Notifications?", emailOnOff);
+    localStorage.setItem("Set Profile to Public?", profileOnOff);
+    localStorage.setItem("Timezone", timezone);
+  };
+
+  cancelBtn.addEventListener("click", () => {
+    localStorage.clear();
+    location.reload();
+  });
+
+  if (localStorage.getItem("Send Email Notifications?") === "true") {
+    settingsCheckboxEmail.checked = true;
+  }
+  if (localStorage.getItem("Set Profile to Public?") === "true") {
+    settingsCheckboxProfile.checked = true;
+  }
+  if (localStorage.getItem("Timezone")) {
+    Timezones.value = localStorage.getItem("Timezone");
+  } else {
+    Timezones.selectedIndex = 0;
+  }
+  
