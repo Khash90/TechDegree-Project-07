@@ -18,15 +18,19 @@
           
           ;
         }
+        .home-svg, .bar-svg, .members-svg, .settings-svg {
+          width: 40px;
+          margin: 8px 0;
+      }
         .nav{
-          height: 100%;
+          
           width: 99%;
         }
         #navbar{
         flex-direction: column;
-        justify-content: space-between;
-        padding: 5px 1px;
-         margin: 0 10px;
+        justify-content: flex-start;
+        
+        margin: 11px -1px;
         }
         .icon{
           margin: 15px 0;

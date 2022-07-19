@@ -1,7 +1,7 @@
 .icon{
     animation: grow 1s ease-out backwards;
     animation-delay: .5s;
-    transform-origin: 50% 50%;
+    transform-origin: center center;
     transition: transform .5s ease-out;
 }
 .icon:hover{

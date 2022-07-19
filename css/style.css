@@ -856,7 +856,7 @@ label strong {
 .icon {
   animation: grow 1s ease-out backwards;
   animation-delay: 0.5s;
-  transform-origin: 50% 50%;
+  transform-origin: center center;
   transition: transform 0.5s ease-out;
 }
 
@@ -985,16 +985,19 @@ main {
     grid-template-areas: "header header" "navbar main ";
   }
 
+  .home-svg, .bar-svg, .members-svg, .settings-svg {
+    width: 40px;
+    margin: 8px 0;
+  }
+
   .nav {
-    height: 100%;
     width: 99%;
   }
 
   #navbar {
     flex-direction: column;
-    justify-content: space-between;
-    padding: 5px 1px;
-    margin: 0 10px;
+    justify-content: flex-start;
+    margin: 11px -1px;
   }
 
   .icon {
@@ -1214,7 +1217,6 @@ nav {
 .home-icon {
   width: 10%;
   padding: 18px;
-  background: url(../../svgs/home.svg) no-repeat;
 }
 .home-icon:hover {
   cursor: pointer;
@@ -1223,7 +1225,6 @@ nav {
 .bars-icon {
   width: 10%;
   padding: 18px;
-  background: url(../../svgs/bar-chart.svg) no-repeat;
 }
 .bars-icon:hover {
   cursor: pointer;
@@ -1232,7 +1233,6 @@ nav {
 .members-icon {
   width: 10%;
   padding: 18px;
-  background: url(../../svgs/members.svg) no-repeat;
 }
 .members-icon:hover {
   cursor: pointer;
@@ -1241,7 +1241,6 @@ nav {
 .settings-icon {
   width: 10%;
   padding: 18px;
-  background: url(../../svgs/settings.svg) no-repeat;
 }
 .settings-icon:hover {
   cursor: pointer;
@@ -1255,6 +1254,13 @@ nav {
 }
 .bell:hover {
   cursor: pointer;
+}
+
+.home-svg,
+.bar-svg,
+.members-svg,
+.settings-svg {
+  width: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
