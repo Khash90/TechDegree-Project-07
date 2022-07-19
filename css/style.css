@@ -1219,6 +1219,17 @@ main {
   .btn-style1 {
     line-height: 42px;
   }
+
+  .social-box ul :nth-child(1) {
+    font-size: 20px;
+    margin: 0 -32px;
+  }
+
+  .social-box ul :nth-child(2) {
+    font-weight: 100;
+    font-size: 2em;
+    margin: -13px -34px;
+  }
 }
 @media (min-width: 1200px) {
   .m3-time {
