@@ -18,6 +18,16 @@
    
 }
 
+#submit-btn{
+
+    background-color: rgb(91, 118, 207);
+    transition: background-color .5s ease-in-out;
+    &:hover{
+        cursor: pointer;
+        background-color: rgb(26, 34, 59);
+        color: white;
+    }
+}
 .main-form{
     display: flex;
     flex-direction: column;

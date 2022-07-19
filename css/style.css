@@ -473,7 +473,7 @@ ul li {
 
 .alert {
   width: 90%;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .alert-text {
@@ -551,6 +551,10 @@ ul li {
 .mu-chart {
   margin: 0;
   max-width: 100%;
+}
+
+alert-banner-close:hover {
+  cursor: pointer;
 }
 
 .newMembers {
@@ -652,6 +656,16 @@ ul li {
   transition: all 0.5s ease 0s;
 }
 
+#submit-btn {
+  background-color: rgb(91, 118, 207);
+  transition: background-color 0.5s ease-in-out;
+}
+#submit-btn:hover {
+  cursor: pointer;
+  background-color: rgb(26, 34, 59);
+  color: white;
+}
+
 .main-form {
   display: flex;
   flex-direction: column;
@@ -710,9 +724,12 @@ label strong {
   width: 90%;
   height: 52px;
   border-radius: 5px;
-  background-color: rgb(20, 37, 76);
+  background-color: rgb(47, 130, 118);
   color: white;
   margin: 0 15px;
+}
+.span5:hover {
+  cursor: pointer;
 }
 
 .timezone {
@@ -726,20 +743,30 @@ label strong {
   width: 50%;
   line-height: 35px;
   border-radius: 5px;
-  background-color: rgb(24, 38, 82);
+  background-color: rgb(69, 98, 194);
   color: white;
   text-align: center;
   margin-left: 7px;
+  transition: background-color 0.5s ease-in-out;
+}
+.btn-style1:hover {
+  cursor: pointer;
+  background-color: rgb(27, 38, 75);
 }
 
 .btn-style2 {
   width: 50%;
   line-height: 35px;
   border-radius: 5px;
-  background-color: rgb(81, 11, 11);
+  background-color: rgb(119, 176, 62);
   color: white;
   text-align: center;
   margin-right: -7px;
+  transition: background-color 0.5s ease-in-out;
+}
+.btn-style2:hover {
+  cursor: pointer;
+  background-color: rgb(48, 71, 25);
 }
 
 .buttons {
@@ -846,7 +873,7 @@ label strong {
 }
 
 .bell:hover {
-  transform: scale(0.8);
+  transform: scale(1.1);
 }
 
 .fb-stat,
@@ -874,10 +901,6 @@ label strong {
     transform: scale(0.9);
   }
 }
-.social-box:hover {
-  background-color: color-palettes(night, x-light);
-}
-
 .social {
   border-bottom: 1px solid rgb(53, 32, 130);
 }
@@ -1081,6 +1104,11 @@ main {
   .m4-time {
     padding-right: 214px;
   }
+
+  .alert-text {
+    text-align: center;
+    margin: 11px auto;
+  }
 }
 @media (min-width: 1024px) {
   .members-bigscreen {
@@ -1161,6 +1189,10 @@ main {
 @media (min-width: 1200px) {
   .m3-time {
     padding-right: 330px;
+  }
+
+  .notify-box {
+    left: 781px;
   }
 }
 .nav {
