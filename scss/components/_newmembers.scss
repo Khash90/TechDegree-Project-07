@@ -28,6 +28,7 @@
         margin: 0;
         & p{
             margin: 0;
+            margin-bottom: 10px;
         }
 }
  .date{
@@ -62,4 +63,6 @@
 .activity-btn{
     display: none;
 }
-
+.p-margin {
+    margin-top: 0;
+}

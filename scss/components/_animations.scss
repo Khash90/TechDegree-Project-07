@@ -2,7 +2,7 @@
     animation: grow 1s ease-out backwards;
     animation-delay: .5s;
     transform-origin: center center;
-    transition: transform .5s ease-out;
+    transition: transform .5s ease-in-out;
 }
 .icon:hover{
     transform: scale(1.2);
@@ -22,14 +22,14 @@
 .fb-stat,
 .inst-stat,
 .twit-stat{
-    transition: transform .8s ease-in-out;
-    transform-origin: center center;
-}
-.fb-stat:hover,
-.inst-stat:hover,
-.twit-stat:hover{
-    transform: rotate(360deg);
+    transition: background-color .8s ease-in-out;
+    &:hover{
+
+    background-color: rgb(35, 47, 63);;
     cursor: pointer;
+    
+}
+
 }
 
 @keyframes grow {

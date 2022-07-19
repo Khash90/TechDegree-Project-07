@@ -33,7 +33,7 @@
         margin: 11px -1px;
         }
         .icon{
-          margin: 15px 0;
+          margin: 15px 8px;;
         }
         .traffic  {
           width: 95%;
@@ -90,6 +90,9 @@
           font-size: 2em;
            margin: -13px -43px;
         }
+       .p-names{
+          margin-right: 128px;
+        }
       .member-one,
       .member-two,
       .member-three,
@@ -101,17 +104,16 @@
       .mem{
         margin-right: auto;
       }
-      
-      .member-details p, a{
-        margin: 0 10px;
-      }
+     
+      .member-details p {
+        margin-right: 127px;
+        margin-left: 13px;
+        margin-bottom: 0;
+       }
       .activity-btn{
         display: block;
       }
-      #margin-bot{
-        margin-bottom: -8px;
-        
-      }
+   
       .m1-time{
         padding-right: 307px;
       }
@@ -128,6 +130,11 @@
         text-align: center;
         margin: 11px auto;
     }
+    .stn-name {
+      
+      font-size: 12px;
+      
+  }
   }
   
 
@@ -147,18 +154,42 @@
         border-left: 1px solid $purple;
         width: 50%;
      }
-     .m1-time {
-        padding-right: 247px;
-    }
-    .m2-time {
-        padding-right: 245px;
-    }
-     .m3-time {
-        padding-right: 244px;
-    }
-    .m4-time {
-    padding-right: 210px;
-}
+     .mem-det p{
+      margin-bottom: 0;
+      padding: 0 0px;
+     }
+     #m1-time,
+     #m2-time,
+     #m4-time {
+      margin-right: 254px;
+     }
+     #m1-p,
+     #m2-p,
+     #m4-p {
+      margin-right: -17px;
+      text-align: left;
+      font-size: 15px;
+     }
+     #m3-p{
+      margin-right: -17px;
+      text-align: left;
+      font-size: 15px;
+     }
+     #m3-time{
+      margin-right: 254px;
+     }
+    //  .m1-time {
+    //     padding-right: 247px;
+    // }
+    // .m2-time {
+    //     padding-right: 245px;
+    // }
+    //  .m3-time {
+    //     padding-right: 244px;
+    // }
+    // .m4-time {
+    // padding-right: 210px;
+
      .settings-bigscreen{
         display: flex;
         flex-direction: row;
@@ -183,15 +214,15 @@
   }
 
   @media (min-width: 1100px){
-    .m1-time {
-        padding-right: 285px;
-    }
-    .m2-time {
-        padding-right: 285px;
-    }
-    .m3-time {
-        padding-right: 283px;
-    }
+    // .m1-time {
+    //     padding-right: 285px;
+    // }
+    // .m2-time {
+    //     padding-right: 285px;
+    // }
+    // .m3-time {
+    //     padding-right: 283px;
+    // }
     
   }
   @media (min-width: 1200px) {
