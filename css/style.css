@@ -553,7 +553,7 @@ ul li {
   max-width: 100%;
 }
 
-alert-banner-close:hover {
+.alert-banner-close:hover {
   cursor: pointer;
 }
 
