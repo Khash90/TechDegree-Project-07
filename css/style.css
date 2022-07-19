@@ -1215,6 +1215,7 @@ nav {
   width: 10%;
   padding: 18px;
   background: url(../../svgs/home.svg) no-repeat;
+  fill: white;
 }
 .home-icon:hover {
   cursor: pointer;
