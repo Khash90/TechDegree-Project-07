@@ -1,8 +1,11 @@
 .bell{
     max-width: 30px;
     height: 30px;
-    margin-top: 7px;
-    
+    margin-top: 1px;
+    margin-left: 1px;
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 

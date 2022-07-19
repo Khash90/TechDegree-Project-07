@@ -26,6 +26,9 @@
     margin: 0 7px;
     font-size: 17px;
     padding: 8px;
+    &:hover{
+        cursor: pointer;
+    }
 }
 #hour-btn:hover,
 #daily-btn:hover,
