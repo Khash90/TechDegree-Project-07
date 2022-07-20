@@ -56,10 +56,12 @@
       text-align: center;
       align-items: center;
       justify-content: center;
+     
     }
     .notify-close:hover {
       background-color: #7773ca;
-      color: white;
+       color: white;
+      cursor: pointer;
     }
 
     .bell-svg{
