@@ -252,6 +252,9 @@
     // .m3-time {
     //     padding-right: 283px;
     // }
+    .notify-box {
+      left: 670px;
+  }
     
   }
   @media (min-width: 1200px) {
@@ -259,6 +262,17 @@
         padding-right: 330px;
     }
     .notify-box {
-        left: 781px;
-    }
+      left: 878px;
+  }
+  }
+  @media (min-width: 1450px) {
+    .notify-box {
+      left: 1206px;
+  
+   }
+   @media (min-width: 1550px){
+    .notify-box {
+      left: 1134px;
+  }
+   }
   }
